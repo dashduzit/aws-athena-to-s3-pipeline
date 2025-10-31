@@ -1,4 +1,11 @@
 # aws-athena-to-s3-pipeline
+A simple AWS Lambda function that:
+1. Queries data from an AWS Athena Table
+2. Waits for the query to complete
+3. Saves the results into an S3 bucket
+## Lambda Code (Python 3.9)
+
+```python
 import boto3
 import json
 import time
